@@ -1,9 +1,12 @@
 const Docker = require('dockerode');
 const cron = require('node-cron');
 const docker = new Docker({ socketPath: '/var/run/docker.sock' });
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 // Lista de contenedores en orden específico
-const order = ['container_name1', 'container_name2'];
+const order = process.env.ORDER.split(',');
 
 async function restartContainers() {
   for (const containerName of order) {

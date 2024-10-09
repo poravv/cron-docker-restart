@@ -4,6 +4,13 @@ Funciona para realizar reinicio de contenedores docker en ciertos horarios reque
 ```
 npm i
 ```
+
+## Agregar las variables de entorno .env
+
+```
+ORDER=container_name1,container_name2
+```
+
 ## Iniciar la aplicación con PM2:
 ```
 pm2 start app.js
