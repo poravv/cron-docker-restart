@@ -13,7 +13,7 @@ ORDER=container_name1,container_name2
 
 ## Iniciar la aplicación con PM2:
 ```
-pm2 start app.js
+pm2 start index.js
 ```
 Para mantener ejecutandose 
 ```
