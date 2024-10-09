@@ -1,4 +1,5 @@
 # Levantar app 
+Funciona para realizar reinicio de contenedores docker en ciertos horarios requeridos
 ## Instalar dependencias 
 ```
 npm i
